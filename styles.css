@@ -5,12 +5,20 @@ body {
     background: #f8f9fa;
     color: #333;
 }
+
 .highlight {
-    color: #007bff
+    color: #007bff;
 }
+
 .navbar {
     background: #007bff;
     padding: 10px 0;
+}
+
+.logo-image {
+    height: auto;
+    width: 200px;
+    vertical-align: middle;
 }
 
 .navbar .container {
@@ -40,7 +48,9 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    font-size: 20px;
 }
+
 .get-involved-image {
     max-width: 100%;
     height: auto;
@@ -48,8 +58,9 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .hero {
-    background: url('images/Screenshot\ 2024-07-08\ 190609.png') no-repeat center center;
+    background: url('images/Screenshot 2024-07-08 190609.png') no-repeat center center;
     color: #fff;
     text-align: center;
     padding: 150px 20px;
