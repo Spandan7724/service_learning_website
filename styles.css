@@ -51,6 +51,36 @@ body {
     font-size: 20px;
 }
 
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-login,
+.btn-join {
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background 0.3s;
+    color: #fff;
+}
+
+.btn-login {
+    background: #007bff;
+}
+
+.btn-login:hover {
+    background: #20ac3e;
+}
+
+.btn-join {
+    background: #007bff;
+}
+
+.btn-join:hover {
+    background: #ff0303;
+}
+
 .get-involved-image {
     max-width: 100%;
     height: auto;
@@ -219,4 +249,4 @@ h3 {
         opacity: 1;
         transform: translateY(0);
     }
-}
+}   
