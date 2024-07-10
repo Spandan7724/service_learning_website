@@ -10,7 +10,6 @@
 </head>
 
 <body>
-    <!-- Navigation bar -->
     <nav class="navbar">
         <div class="container">
             <a href="#" class="logo">
@@ -24,13 +23,25 @@
                 <li><a href="#get-involved">Get Involved</a></li>
             </ul>
             <div class="nav-buttons">
-                <a href="#" class="btn-login">Login</a>
-                <a href="#" class="btn-join">Join Us</a>
+                <a href="#" class="btn-login" id="loginBtn">Login</a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#about">About Us</a>
+        <a href="#vision-mission">Vision & Mission</a>
+        <a href="#core-elements">Core Elements</a>
+        <a href="#projects">Projects</a>
+        <a href="#get-involved">Get Involved</a>
+    </div>
+
     <section class="hero">
         <div class="hero-content">
             <h1>Climate Troopers Foundation</h1>
@@ -39,22 +50,18 @@
         </div>
     </section>
 
-    <!-- About Us -->
     <section id="about" class="about">
         <div class="container">
             <h2>About Us</h2>
             <div class="element">
                 <p>Climate Troopers Foundation is a Section 8 company committed to sustainable solutions for our
-                    planet’s
-                    most pressing environmental challenges. Our holistic approach focuses on five critical elements:
-                    <span class="highlight">water, waste, energy, biodiversity, and air quality</span>. Together, we can
-                    create a balanced and sustainable world
-                    for future generations.</p>
+                    planet’s most pressing environmental challenges. Our holistic approach focuses on five critical
+                    elements: <span class="highlight">water, waste, energy, biodiversity, and air quality</span>.
+                    Together, we can create a balanced and sustainable world for future generations.</p>
             </div>
         </div>
     </section>
 
-    <!-- Vision & Mission -->
     <section id="vision-mission" class="vision-mission">
         <div class="container">
             <h2>Our Vision & Mission</h2>
@@ -73,7 +80,6 @@
         </div>
     </section>
 
-    <!-- Core Elements -->
     <section id="core-elements" class="core-elements">
         <div class="container">
             <h2>Core Elements</h2>
@@ -107,7 +113,6 @@
         </div>
     </section>
 
-    <!-- Featured Projects -->
     <section id="projects" class="projects">
         <div class="container">
             <h2>Our Projects</h2>
@@ -136,7 +141,6 @@
         </div>
     </section>
 
-    <!-- Get Involved -->
     <section id="get-involved" class="get-involved">
         <div class="container">
             <h2>Get Involved</h2>
@@ -163,7 +167,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Climate Troopers Foundation. All rights reserved.</p>
@@ -171,6 +174,50 @@
         </div>
     </footer>
 
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form action="placeholder" method="POST">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn-login">Login</button>
+            </form>
+            <div class="additional-links">
+                <a href="#" id="registerLink">Don't have an account? Join us now</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-register">&times;</span>
+            <h2>Register</h2>
+            <form action="placeholder" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="text" id="mobile" name="mobile" required>
+                </div>
+                <button type="submit" class="btn-register">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
 </body>
 
 </html>
